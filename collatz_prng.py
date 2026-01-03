@@ -13,7 +13,6 @@ def orta_zorluk_collatz(bit_sayisi, anahtar):
         while len(cift) < 2:
             # --- ATLAMA (SKIPPING) ---
             # Ardışık bitler arasındaki bağımlılığı kırmak için 2 adım boşa çalıştırıyoruz.
-            # Bu sayede 'Runs Testi' (Dizi Testi) başarılı sonuç verir.
             for _ in range(2): 
                 if n % 2 == 0: n //= 2
                 else: n = 3 * n + 1
@@ -63,3 +62,4 @@ if __name__ == "__main__":
         
     except ValueError:
         print("Hata: Lütfen bit sayısı için geçerli bir tam sayı giriniz.")
+
